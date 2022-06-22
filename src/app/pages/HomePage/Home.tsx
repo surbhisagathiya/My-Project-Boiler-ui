@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import { Logo } from 'app/components/NavBar/Logo';
 import { Menu } from 'app/components/NavBar/Menu';
 import { Search } from 'app/components/NavBar/Search';
@@ -18,22 +18,32 @@ export default function Home() {
             display: 'flex',
             paddingTop: '11px',
             paddingBottom: '11px',
-            width: '100%',
-            justifyContent: 'space-between',
           }}
         >
-          <Box d="flex">
-            <Logo />
-            <Search />
-          </Box>
-          <Box d="flex">
-            <Menu iconUrl={<TimeIcon />} Icontext="Explore" />
-            <Menu iconUrl={<TimeIcon />} Icontext="Bookmarks" />
-            <Menu iconUrl={<TimeIcon />} Icontext="Start writing" />
-            <MenuIcon iconUrl={<SettingsIcon />} />
-            <MenuIcon iconUrl={<SettingsIcon />} />
-            <MenuIcon iconUrl={<SettingsIcon />} />
-          </Box>
+          <Flex
+            style={{ width: '100%', justifyContent: 'space-between' }}
+            flexDirection={{
+              base: 'column',
+              sm: 'column',
+              md: 'column',
+              lg: 'row',
+              xl: 'row',
+              '2xl': 'row',
+            }}
+          >
+            <Box d="flex">
+              <Logo />
+              <Search />
+            </Box>
+            <Box d="flex">
+              <Menu iconUrl={<TimeIcon />} Icontext="Explore" />
+              <Menu iconUrl={<TimeIcon />} Icontext="Bookmarks" />
+              <Menu iconUrl={<TimeIcon />} Icontext="Start writing" />
+              <MenuIcon iconUrl={<SettingsIcon />} />
+              <MenuIcon iconUrl={<SettingsIcon />} />
+              <MenuIcon iconUrl={<SettingsIcon />} />
+            </Box>
+          </Flex>
         </PageWrapper>
       </Wrapper>
     </>
