@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
   html,
   body {
     height: 100%;
@@ -8,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Nunito Sans', NunitoSans, Arial, sans-serif;
   }
 
   #root {
@@ -18,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
 
   p,
   label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Nunito Sans', NunitoSans, Arial, sans-serif;
     line-height: 1.5em;
   }
 
