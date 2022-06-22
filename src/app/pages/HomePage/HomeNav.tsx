@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { Logo } from 'app/components/NavBar/Logo';
 import { Menu } from 'app/components/NavBar/Menu';
 import { Search } from 'app/components/NavBar/Search';
@@ -9,7 +9,7 @@ import { StyleConstants } from 'styles/StyleConstants';
 import { TimeIcon, SettingsIcon } from '@chakra-ui/icons';
 import { MenuIcon } from 'app/components/NavBar/MenuIcon';
 
-export default function Home() {
+export default function HomeNav() {
   return (
     <>
       <Wrapper style={{ backgroundColor: '#183380', color: 'white' }}>
@@ -18,32 +18,22 @@ export default function Home() {
             display: 'flex',
             paddingTop: '11px',
             paddingBottom: '11px',
+            width: '100%',
+            justifyContent: 'space-between',
           }}
         >
-          <Flex
-            style={{ width: '100%', justifyContent: 'space-between' }}
-            flexDirection={{
-              base: 'column',
-              sm: 'column',
-              md: 'column',
-              lg: 'column',
-              xl: 'column',
-              '2xl': 'row',
-            }}
-          >
-            <Box d="flex">
-              <Logo />
-              <Search />
-            </Box>
-            <Box d="flex">
-              <Menu iconUrl={<TimeIcon />} Icontext="Explore" />
-              <Menu iconUrl={<TimeIcon />} Icontext="Bookmarks" />
-              <Menu iconUrl={<TimeIcon />} Icontext="Start writing" />
-              <MenuIcon iconUrl={<SettingsIcon />} />
-              <MenuIcon iconUrl={<SettingsIcon />} />
-              <MenuIcon iconUrl={<SettingsIcon />} />
-            </Box>
-          </Flex>
+          <Box d="flex">
+            <Logo />
+            <Search />
+          </Box>
+          <Box d="flex">
+            <Menu iconUrl={<TimeIcon />} Icontext="Explore" />
+            <Menu iconUrl={<TimeIcon />} Icontext="Bookmarks" />
+            <Menu iconUrl={<TimeIcon />} Icontext="Start writing" />
+            <MenuIcon iconUrl={<SettingsIcon />} />
+            <MenuIcon iconUrl={<SettingsIcon />} />
+            <MenuIcon iconUrl={<SettingsIcon />} />
+          </Box>
         </PageWrapper>
       </Wrapper>
     </>
@@ -54,7 +44,7 @@ const Wrapper = styled.header`
   box-shadow: 0 1px 0 0 ${p => p.theme.borderLight};
   height: ${StyleConstants.NAV_BAR_HEIGHT};
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   font-family: 'Nunito Sans', NunitoSans, Arial, sans-serif;
