@@ -16,6 +16,7 @@ import {
 } from '@chakra-ui/react';
 import { Field, Form, Formik } from 'formik';
 import * as yup from 'yup';
+import { useHistory } from 'react-router-dom';
 
 const schema = yup.object().shape({
   email: yup.string().email().required('Please Enter your password'),
@@ -29,6 +30,7 @@ const schema = yup.object().shape({
 });
 
 export default function Login() {
+  const history = useHistory();
   // const formik = useFormik({
   //   initialValues: {
   //     email: '',
@@ -68,6 +70,7 @@ export default function Login() {
               onSubmit={values => {
                 console.log(JSON.stringify(values));
                 // alert(JSON.stringify(values, null, 2));
+                history.push('/home');
               }}
             >
               {({ handleSubmit, errors, touched }) => (
