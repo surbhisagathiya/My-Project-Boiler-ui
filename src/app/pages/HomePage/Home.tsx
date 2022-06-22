@@ -1,97 +1,48 @@
+import { Box, Flex } from '@chakra-ui/react';
+import { Logo } from 'app/components/NavBar/Logo';
+import { Menu } from 'app/components/NavBar/Menu';
+import { Search } from 'app/components/NavBar/Search';
+import { PageWrapper } from 'app/components/PageWrapper';
 import { Card } from 'app/components/HomePage/Card';
 // import { PageWrapper } from 'app/components/PageWrapper';
-import * as React from 'react';
-import { Helmet } from 'react-helmet-async';
-import HomeNav from './HomeNav';
-import img1 from '../../../images/img1.png';
-import { Box } from '@chakra-ui/react';
 
 export function Home() {
   return (
     <>
-      <Helmet>
-        <title>HomePage</title>
-        <meta name="description" content="A Boilerplate application homepage" />
-      </Helmet>
-      <HomeNav />
-      <Box mr="80px" ml="80px">
-        <Box d="flex" justifyContent="space-between">
-          <Box w="49%">
-            <Card
-              imageSrc={img1}
-              imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
-              imageName="Floyd West"
-              imgDate="23 Mar"
-              imgTime="4 min read"
-            />
-          </Box>
-          <Box w="49%">
-            <Card
-              imageSrc={img1}
-              imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
-              imageName="Floyd West"
-              imgDate="23 Mar"
-              imgTime="4 min read"
-            />
-          </Box>
-        </Box>
-        <Box d="flex" justifyContent="space-between">
-          <Box w="32%">
-            <Card
-              imageSrc={img1}
-              imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
-              imageName="Floyd West"
-              imgDate="23 Mar"
-              imgTime="4 min read"
-            />
-          </Box>
-          <Box w="32%">
-            <Card
-              imageSrc={img1}
-              imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
-              imageName="Floyd West"
-              imgDate="23 Mar"
-              imgTime="4 min read"
-            />
-          </Box>
-          <Box w="32%">
-            <Card
-              imageSrc={img1}
-              imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
-              imageName="Floyd West"
-              imgDate="23 Mar"
-              imgTime="4 min read"
-            />
-          </Box>
-        </Box>
-        <Box d="flex" justifyContent="space-between">
-          <Box w="69%">
-            <Card
-              imageSrc={img1}
-              imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
-              imageName="Floyd West"
-              imgDate="23 Mar"
-              imgTime="4 min read"
-            />
-          </Box>
-          <Box w="29%">
-            <Card
-              imageSrc={img1}
-              imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
-              imageName="Floyd West"
-              imgDate="23 Mar"
-              imgTime="4 min read"
-            />
-          </Box>
-        </Box>
-      </Box>
-    </>
+      <Wrapper style={{ backgroundColor: '#183380', color: 'white' }}>
+        <PageWrapper
+          style={{
+            display: 'flex',
+            paddingTop: '11px',
+            paddingBottom: '11px',
+          }}
+        >
+          <Flex
+            style={{ width: '100%', justifyContent: 'space-between' }}
+            flexDirection={{
+              base: 'column',
+              sm: 'column',
+              md: 'column',
+              lg: 'column',
+              xl: 'column',
+              '2xl': 'row',
+            }}
+          >
+            <Box d="flex">
+              <Logo />
+              <Search />
+            </Box>
+            <Box d="flex">
+              <Menu iconUrl={<TimeIcon />} Icontext="Explore" />
+              <Menu iconUrl={<TimeIcon />} Icontext="Bookmarks" />
+              <Menu iconUrl={<TimeIcon />} Icontext="Start writing" />
+              <MenuIcon iconUrl={<SettingsIcon />} />
+              <MenuIcon iconUrl={<SettingsIcon />} />
+              <MenuIcon iconUrl={<SettingsIcon />} />
+            </Box>
+          </Flex>
+        </PageWrapper>
+      </Wrapper>
+        </>
   );
 }
