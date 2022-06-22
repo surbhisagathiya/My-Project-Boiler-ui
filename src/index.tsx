@@ -26,17 +26,21 @@ import reportWebVitals from 'reportWebVitals';
 
 // Initialize languages
 import './locales/i18n';
+import { ChakraProvider } from '@chakra-ui/react';
+import theme from 'chakraTheme';
 
 const store = configureAppStore();
 const MOUNT_NODE = document.getElementById('root') as HTMLElement;
 
 ReactDOMClient.createRoot(MOUNT_NODE!).render(
   <Provider store={store}>
-    <HelmetProvider>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </HelmetProvider>
+    <ChakraProvider theme={theme}>
+      <HelmetProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </HelmetProvider>
+    </ChakraProvider>
   </Provider>,
 );
 
