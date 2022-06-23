@@ -22,7 +22,7 @@ const Nav: React.FC<Props> = props => (
 
 export default Nav;
 
-  const Wrapper = styled.nav`
+const Wrapper = styled.nav`
   display: flex;
   justify-content: center;
   width: 100%;

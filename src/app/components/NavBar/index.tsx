@@ -4,6 +4,7 @@ import { Logo } from './Logo';
 import { PageWrapper } from '../PageWrapper';
 import { StyleConstants } from 'styles/StyleConstants';
 import Nav from './Nav';
+import { Flex } from '@chakra-ui/react';
 
 export function NavBar() {
   return (
