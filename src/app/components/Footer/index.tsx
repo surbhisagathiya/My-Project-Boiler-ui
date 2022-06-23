@@ -2,13 +2,13 @@ import * as React from 'react';
 import styled from 'styled-components/macro';
 import { PageWrapper } from '../PageWrapper';
 import { Box, Flex, Text } from '@chakra-ui/react';
-import { Copyright } from './Copyright';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
   faGooglePlusG,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
+import Copyright from './Copyright';
 
 export function Footer() {
   return (
@@ -50,8 +50,8 @@ const Wrapper = styled.footer`
   height: fit-content;
   max-height: 4.5rem;
   display: flex;
-  position: absolute;
-  bottom: 0;
+  position: inherit;
+  /* bottom: 0; */
   width: 100%;
   font-family: 'Nunito Sans', NunitoSans, Arial, sans-serif;
   font-size: 16px;
@@ -66,5 +66,8 @@ const Wrapper = styled.footer`
     opacity: 0.7;
     padding-top: 10px;
     padding-bottom: 10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
   }
 `;
