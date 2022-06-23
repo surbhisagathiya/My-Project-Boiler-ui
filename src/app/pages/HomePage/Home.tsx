@@ -15,7 +15,7 @@ export function Home() {
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
       <HomeNav />
-      <Box mr="80px" ml="80px">
+      <Box mr="80px" ml="80px" bg="white">
         <Box>
           <Box
             d="flex"
