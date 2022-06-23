@@ -1,3 +1,4 @@
+import { Footer } from 'app/components/Footer';
 import { NavBar } from 'app/components/NavBar';
 import { PageWrapper } from 'app/components/PageWrapper';
 import * as React from 'react';
@@ -15,6 +16,7 @@ export function HomePage() {
       <PageWrapper>
         <Login />
       </PageWrapper>
+      <Footer />
     </>
   );
 }
