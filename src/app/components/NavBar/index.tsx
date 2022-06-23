@@ -29,6 +29,8 @@ const Wrapper = styled.header`
   display: flex;
   /* position: absolute; */
   top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   font-family: 'Nunito Sans', NunitoSans, Arial, sans-serif;
   font-size: 16px;

@@ -6,7 +6,7 @@ export function Nav(props) {
   return (
     <Wrapper
       style={{
-        position: 'absolute',
+        position: 'fixed',
         width: '100%',
         textAlign: 'center',
       }}
