@@ -164,7 +164,19 @@ export function Home() {
       </Box>
       {/* 4 row */}
       <Box backgroundColor="#e4f9f6" pl="80px" pr="80px" pb="40px" mt="50px">
-        <Box d="flex" pt={8} justifyContent="space-between">
+        <Box
+          d="flex"
+          pt={8}
+          justifyContent="space-between"
+          flexDirection={{
+            base: 'column',
+            sm: 'column',
+            md: 'column',
+            lg: 'row',
+            xl: 'row',
+            '2xl': 'row',
+          }}
+        >
           <Text fontWeight="bold" color="#20cdbb" fontSize={17}>
             Rayft recommended articles
           </Text>
