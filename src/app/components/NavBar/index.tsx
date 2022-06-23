@@ -1,10 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
 import { Logo } from './Logo';
-import { Nav } from './Nav';
 import { PageWrapper } from '../PageWrapper';
 import { StyleConstants } from 'styles/StyleConstants';
-import { Flex } from '@chakra-ui/react';
+import Nav from './Nav';
 
 export function NavBar() {
   return (
@@ -42,6 +41,8 @@ const Wrapper = styled.header`
   display: flex;
   /* position: absolute; */
   top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   font-family: 'Nunito Sans', NunitoSans, Arial, sans-serif;
   font-size: 16px;
