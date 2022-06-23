@@ -1,6 +1,6 @@
 import { Text } from '@chakra-ui/react';
 import * as React from 'react';
-import styled from 'styled-components/macro';
+// import styled from 'styled-components/macro';
 
 interface navProps {
   title: string;
@@ -9,24 +9,9 @@ interface navProps {
 type Props = navProps;
 
 const Nav: React.FC<Props> = props => (
-  <Wrapper
-    style={{
-      position: 'fixed',
-      width: '100%',
-      textAlign: 'center',
-    }}
-  >
-    <Text>{props.title}</Text>
-  </Wrapper>
+  <Text textAlign="center" w="80%" fontWeight="bold" letterSpacing={1}>
+    {props.title}
+  </Text>
 );
 
 export default Nav;
-
-const Wrapper = styled.nav`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 2px;
-`;

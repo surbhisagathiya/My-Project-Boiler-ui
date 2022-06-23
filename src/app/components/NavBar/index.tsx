@@ -29,7 +29,7 @@ export function NavBar() {
           }}
         >
           <Logo />
-          <Nav title="Login" />
+          <Nav title="Log in" />
         </Flex>
       </PageWrapper>
     </Wrapper>
