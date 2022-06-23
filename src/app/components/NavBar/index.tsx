@@ -27,7 +27,7 @@ const Wrapper = styled.header`
   box-shadow: 0 1px 0 0 ${p => p.theme.borderLight};
   height: ${StyleConstants.NAV_BAR_HEIGHT};
   display: flex;
-  position: fixed;
+  /* position: absolute; */
   top: 0;
   width: 100%;
   font-family: 'Nunito Sans', NunitoSans, Arial, sans-serif;
