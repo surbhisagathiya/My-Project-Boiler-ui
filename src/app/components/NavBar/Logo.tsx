@@ -1,22 +1,29 @@
 import * as React from 'react';
-import styled from 'styled-components/macro';
+// import styled from 'styled-components/macro';
 import { Img } from '@chakra-ui/react';
 import logo from '../../../images/logo.png';
 
 export function Logo() {
   return (
-    <Wrapper>
-      <Img src={logo} alt="Logo" w="70px" ml={5} />
-    </Wrapper>
+    // <Wrapper>
+    <Img
+      src={logo}
+      alt="Logo"
+      w={['90px', '90px', '95px']}
+      mt={['9px', '10px', '11px']}
+      mb={['3px', '5px', '11px']}
+      ml={[0, 5, 12]}
+    />
+    // </Wrapper>
   );
 }
 
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  width: 80px;
-  margin-left: 50px;
-`;
+// const Wrapper = styled.div`
+//   display: flex;
+//   align-items: center;
+//   width: 80px;
+//   margin-left: 50px;
+// `;
 
 // const Title = styled.div`
 //   font-size: 1.25rem;
