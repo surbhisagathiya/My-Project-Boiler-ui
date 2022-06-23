@@ -4,6 +4,7 @@ import { Logo } from './Logo';
 import { PageWrapper } from '../PageWrapper';
 import { StyleConstants } from 'styles/StyleConstants';
 import Nav from './Nav';
+import { Flex } from '@chakra-ui/react';
 
 export function NavBar() {
   return (
@@ -16,8 +17,20 @@ export function NavBar() {
           width: '100%',
         }}
       >
-        <Logo />
-        <Nav title="Login" />
+        <Flex
+          w="100%"
+          flexDirection={{
+            base: 'column',
+            sm: 'row',
+            md: 'row',
+            lg: 'row',
+            xl: 'row',
+            '2xl': 'row',
+          }}
+        >
+          <Logo />
+          <Nav title="Login" />
+        </Flex>
       </PageWrapper>
     </Wrapper>
   );
