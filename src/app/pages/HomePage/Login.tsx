@@ -55,12 +55,13 @@ export default function Login() {
           bg="white"
           align="center"
           justify="center"
-          w="410px"
+          // w="410px"
           boxShadow="lg"
           py="35px"
           display={{ md: 'flex' }}
+          w={[250, 400, 500]}
         >
-          <Box m={3} style={{ margin: '0 auto' }} w="300px">
+          <Box m={3} style={{ margin: '0 auto' }} w={[170, 300, 400]}>
             <Formik
               initialValues={{
                 email: '',
