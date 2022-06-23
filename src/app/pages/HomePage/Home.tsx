@@ -1,4 +1,3 @@
-import { Card } from 'app/components/HomePage/Card';
 // import { PageWrapper } from 'app/components/PageWrapper';
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
@@ -6,6 +5,8 @@ import HomeNav from './HomeNav';
 import img1 from '../../../images/img1.png';
 import { Box, Heading, Text } from '@chakra-ui/react';
 import { ChevronRightIcon, DragHandleIcon } from '@chakra-ui/icons';
+import Card from 'app/components/HomePage/Card';
+import { Footer } from 'app/components/Footer';
 
 export function Home() {
   return (
@@ -321,6 +322,7 @@ export function Home() {
           </Box>
         </Box>
       </Box>
+      <Footer />
     </>
   );
 }
