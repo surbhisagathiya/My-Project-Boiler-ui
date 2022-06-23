@@ -62,7 +62,15 @@ export function Home() {
             '2xl': 'row',
           }}
         >
-          <Box w="49%">
+          <Box
+            // w="49%"
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '49%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -72,7 +80,14 @@ export function Home() {
               imgTime="4 min read"
             />
           </Box>
-          <Box w="49%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '49%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -96,7 +111,14 @@ export function Home() {
             '2xl': 'row',
           }}
         >
-          <Box w="32%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '32%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -106,7 +128,14 @@ export function Home() {
               imgTime="4 min read"
             />
           </Box>
-          <Box w="32%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '32%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -116,7 +145,14 @@ export function Home() {
               imgTime="4 min read"
             />
           </Box>
-          <Box w="32%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '32%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -140,7 +176,14 @@ export function Home() {
             '2xl': 'row',
           }}
         >
-          <Box w="69%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '69%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -150,7 +193,14 @@ export function Home() {
               imgTime="4 min read"
             />
           </Box>
-          <Box w="29%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '29%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -197,7 +247,14 @@ export function Home() {
             '2xl': 'row',
           }}
         >
-          <Box w="32%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '32%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -207,7 +264,14 @@ export function Home() {
               imgTime="4 min read"
             />
           </Box>
-          <Box w="32%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '32%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -217,7 +281,14 @@ export function Home() {
               imgTime="4 min read"
             />
           </Box>
-          <Box w="32%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '32%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -255,7 +326,14 @@ export function Home() {
             '2xl': 'row',
           }}
         >
-          <Box w="69%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '69%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -265,7 +343,14 @@ export function Home() {
               imgTime="4 min read"
             />
           </Box>
-          <Box w="29%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '29%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -289,7 +374,14 @@ export function Home() {
             '2xl': 'row',
           }}
         >
-          <Box w="32%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '32%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -299,7 +391,14 @@ export function Home() {
               imgTime="4 min read"
             />
           </Box>
-          <Box w="32%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '32%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
@@ -309,7 +408,14 @@ export function Home() {
               imgTime="4 min read"
             />
           </Box>
-          <Box w="32%">
+          <Box
+            width={[
+              '100%', // 0-30em
+              '100%', // 30em-48em
+              '100%', // 48em-62em
+              '32%', // 62em+
+            ]}
+          >
             <Card
               imageSrc={img1}
               imageAlt="img1"
