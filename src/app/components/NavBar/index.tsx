@@ -16,8 +16,20 @@ export function NavBar() {
           width: '100%',
         }}
       >
-        <Logo />
-        <Nav title="Login" />
+        <Flex
+          w="100%"
+          flexDirection={{
+            base: 'column',
+            sm: 'row',
+            md: 'row',
+            lg: 'row',
+            xl: 'row',
+            '2xl': 'row',
+          }}
+        >
+          <Logo />
+          <Nav title="Login" />
+        </Flex>
       </PageWrapper>
     </Wrapper>
   );
