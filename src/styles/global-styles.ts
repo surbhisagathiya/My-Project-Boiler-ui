@@ -27,4 +27,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: inherit;
     font-size: inherit;
   }
+  Heading,Text{
+    font-family: 'Nunito Sans', NunitoSans, Arial, sans-serif; 
+  }
 `;

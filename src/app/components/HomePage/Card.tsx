@@ -15,7 +15,7 @@ export function Card({
       {/* <Image src={imageSrc} alt={imageAlt} /> */}
       <Box borderWidth="1px" borderRadius="lg" h="300px" mt="24px">
         <Image src={imageSrc} alt={imageAlt} w="100%" h="190px" />
-        <Box p="4">
+        <Box p="0.8em" backgroundColor="white">
           <Box
             // mt="1"
             fontWeight="bold"
