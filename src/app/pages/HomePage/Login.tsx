@@ -21,7 +21,7 @@ import * as yup from 'yup';
 import { useHistory } from 'react-router-dom';
 
 const schema = yup.object().shape({
-  email: yup.string().email().required('Please Enter your password'),
+  email: yup.string().email().required('Please Enter your Email'),
   password: yup
     .string()
     .required('Please Enter your password')
@@ -48,7 +48,7 @@ export default function Login() {
 
   return (
     <>
-      <Heading as="h2" mt="80px" mb="40px" fontWeight="bold" textAlign="center">
+      <Heading as="h2" pt="80px" pb="40px" fontWeight="bold" textAlign="center">
         Let’s get started
       </Heading>
       <VStack>
@@ -126,7 +126,7 @@ export default function Login() {
                     </Button>
                     <Link
                       color="#51a8d1"
-                      href="/home"
+                      href="#"
                       textAlign="center"
                       w="100%"
                       fontSize="sm"
