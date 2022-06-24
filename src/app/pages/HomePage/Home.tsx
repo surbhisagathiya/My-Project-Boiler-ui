@@ -3,6 +3,10 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import HomeNav from './HomeNav';
 import img1 from '../../../images/img1.png';
+import img2 from '../../../images/img2.png';
+import headphone from '../../../images/headphone.jpg';
+import smartwatch1 from '../../../images/smart_watch.png';
+import smartwatch2 from '../../../images/smart_watch_2.png';
 import { Box, Heading, Text } from '@chakra-ui/react';
 import { ChevronRightIcon, DragHandleIcon } from '@chakra-ui/icons';
 import Card from 'app/components/HomePage/Card';
@@ -90,7 +94,7 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={img2}
               imageAlt="img1"
               imgTitle="10 tough practice questions and great sample responses"
               imageName="Floyd West"
@@ -121,7 +125,7 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={headphone}
               imageAlt="img1"
               imgTitle="10 tough practice questions and great sample responses"
               imageName="Floyd West"
@@ -138,7 +142,7 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={smartwatch1}
               imageAlt="img1"
               imgTitle="Can a shampoo bottle save infant lives? Bangladesh is proving it"
               imageName="Floyd West"
@@ -155,7 +159,7 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={smartwatch2}
               imageAlt="img1"
               imgTitle="10 tough practice questions and great sample responses"
               imageName="Floyd West"
@@ -186,7 +190,7 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={img2}
               imageAlt="img1"
               imgTitle="If you got pitched for investment 200 times per week, you might miss a good one too. Or you might discover Facebook"
               imageName="Floyd West"
@@ -236,6 +240,7 @@ export function Home() {
             <ChevronRightIcon />
           </Text>
         </Box>
+        {/* 2 row */}
         <Box
           d="flex"
           justifyContent="space-between"
@@ -257,9 +262,9 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={headphone}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="10 tough practice questions and great sample responses"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -274,9 +279,9 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={smartwatch1}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="Can a shampoo bottle save infant lives? Bangladesh is proving it"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -291,9 +296,9 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={smartwatch2}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="10 tough practice questions and great sample responses"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -336,9 +341,9 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={img2}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="If you got pitched for investment 200 times per week, you might miss a good one too. Or you might discover Facebook"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -355,7 +360,7 @@ export function Home() {
             <Card
               imageSrc={img1}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="10 tough practice questions and sample responses"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -384,9 +389,9 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={headphone}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="10 tough practice questions and great sample responses"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -401,9 +406,9 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={smartwatch1}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="Can a shampoo bottle save infant lives? Bangladesh is proving it"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -418,9 +423,9 @@ export function Home() {
             ]}
           >
             <Card
-              imageSrc={img1}
+              imageSrc={smartwatch2}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="10 tough practice questions and great sample responses"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
