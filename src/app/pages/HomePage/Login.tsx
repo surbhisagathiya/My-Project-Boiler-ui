@@ -21,7 +21,7 @@ import * as yup from 'yup';
 import { useHistory } from 'react-router-dom';
 
 const schema = yup.object().shape({
-  email: yup.string().email().required('Please Enter your password'),
+  email: yup.string().email().required('Please Enter your Email'),
   password: yup
     .string()
     .required('Please Enter your password')
@@ -134,7 +134,7 @@ export default function Login() {
                     </Button>
                     <Link
                       color="#51a8d1"
-                      href="/home"
+                      href="#"
                       textAlign="center"
                       w="100%"
                       fontSize="sm"
