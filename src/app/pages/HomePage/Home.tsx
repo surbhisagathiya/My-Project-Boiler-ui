@@ -92,7 +92,7 @@ export function Home() {
             <Card
               imageSrc={img1}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="10 tough practice questions and great sample responses"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -123,7 +123,7 @@ export function Home() {
             <Card
               imageSrc={img1}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="10 tough practice questions and great sample responses"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -140,7 +140,7 @@ export function Home() {
             <Card
               imageSrc={img1}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="Can a shampoo bottle save infant lives? Bangladesh is proving it"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -157,7 +157,7 @@ export function Home() {
             <Card
               imageSrc={img1}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="10 tough practice questions and great sample responses"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -188,7 +188,7 @@ export function Home() {
             <Card
               imageSrc={img1}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="If you got pitched for investment 200 times per week, you might miss a good one too. Or you might discover Facebook"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
@@ -205,7 +205,7 @@ export function Home() {
             <Card
               imageSrc={img1}
               imageAlt="img1"
-              imgTitle="Modern home in city center in the heart of historic Los Angeles"
+              imgTitle="10 tough practice questions and sample responses"
               imageName="Floyd West"
               imgDate="23 Mar"
               imgTime="4 min read"
