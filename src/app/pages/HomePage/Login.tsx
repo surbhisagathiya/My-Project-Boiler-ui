@@ -2,6 +2,7 @@ import * as React from 'react';
 import {
   Box,
   Button,
+  Flex,
   // Container,
   // Flex,
   FormControl,
@@ -10,6 +11,7 @@ import {
   Heading,
   Input,
   Link,
+  Text,
   // styled,
   VStack,
   // chakra,
@@ -124,11 +126,11 @@ export default function Login() {
                     </Button>
                     <Link
                       color="#51a8d1"
-                      href="#"
+                      href="/home"
                       textAlign="center"
                       w="100%"
                       fontSize="sm"
-                      colorScheme="51a8d1"
+                      colorScheme="#51a8d1"
                     >
                       Forgot password?
                     </Link>
@@ -138,6 +140,14 @@ export default function Login() {
             </Formik>
           </Box>
         </Box>
+        <Flex pt="35px" pb="90px">
+          <Text color="#242a41" opacity={0.4}>
+            Don’t have an account yet?
+          </Text>
+          <Link color="#51a8d1" ml={1}>
+            Sign Up
+          </Link>
+        </Flex>
       </VStack>
     </>
   );
