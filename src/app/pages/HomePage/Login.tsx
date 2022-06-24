@@ -48,7 +48,15 @@ export default function Login() {
 
   return (
     <>
-      <Heading as="h2" pt="80px" pb="40px" fontWeight="bold" textAlign="center">
+      <Heading
+        as="h2"
+        pt="80px"
+        pb="40px"
+        fontWeight="bold"
+        textAlign="center"
+        position="relative"
+        minHeight="calc(100vh - 119vh);"
+      >
         Let’s get started
       </Heading>
       <VStack>
