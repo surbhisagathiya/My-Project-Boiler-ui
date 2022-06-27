@@ -19,6 +19,8 @@ import {
 import { Field, Form, Formik } from 'formik';
 import * as yup from 'yup';
 import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { getLoginData } from './slice/actions';
 
 const schema = yup.object().shape({
   email: yup.string().email().required('Please Enter your Email'),
@@ -33,6 +35,7 @@ const schema = yup.object().shape({
 
 export default function Login() {
   const history = useHistory();
+  const dispatch = useDispatch();
   // const formik = useFormik({
   //   initialValues: {
   //     email: '',
@@ -78,8 +81,9 @@ export default function Login() {
                 password: '',
               }}
               validationSchema={schema}
-              onSubmit={values => {
-                console.log(JSON.stringify(values));
+              onSubmit={data => {
+                console.log(JSON.stringify(data));
+                dispatch(getLoginData(data));
                 // alert(JSON.stringify(values, null, 2));
                 history.push('/home');
               }}

@@ -1,2 +1,9 @@
 /* --- STATE --- */
-export interface LoginState {}
+export interface LoginState {
+  isSuccess: boolean;
+  isError: boolean;
+  userData: {
+    email: string;
+    password: string;
+  };
+}
